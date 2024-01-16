@@ -1,0 +1,5 @@
+package br.com.dfcodlab.declaracaocontroleacesso.fiscal;
+
+public class Produto {
+
+}

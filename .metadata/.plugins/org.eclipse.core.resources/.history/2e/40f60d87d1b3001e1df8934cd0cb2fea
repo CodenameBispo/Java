@@ -1,0 +1,19 @@
+package br.com.dfcodelab7.operadores.atribuicao;
+
+public class OperadoresAtribuicaoTest {
+	
+	public static void main(String[] args) {
+		// =, +=, -= , *= , /= , %= -> Atribuição Abreviados/Compostos
+		
+		int resultado = 10 + 20;
+		System.out.println(resultado);
+		
+		int numeroA = 100;			
+		numeroA = numeroA + 200;
+		System.out.println("O valor do numero A é " + numeroA);
+		
+		int numeroB = 500;
+		numeroB = numeroB - 250;	
+		System.out.println(" O valor do numero B é " + numeroB);
+	}
+}

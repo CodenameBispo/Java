@@ -1,0 +1,29 @@
+package br.com.dfcodelab7.declaracaocontroleacesso.produto;
+
+import java.math.BigDecimal;
+
+public class Produto {
+	
+	/* modificador | Tipo | identificador/nome;*/
+	
+	private String nomeDoProduto; //Apenas dentro da classe
+	protected BigDecimal valorDoProduto; //por pacote, também via herança
+	public String detalhesDoProduto; // all inclusive
+	String marca; //default package-private
+	
+	private void dadosDoProduto() {
+		
+	}
+	
+	public void preencherDadosDoProduto() {
+		
+	}
+	
+	protected void limparNomeDoProduto() {
+		
+	}
+	
+	void qualEhAMarca() {
+		
+	}
+}

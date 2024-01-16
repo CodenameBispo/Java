@@ -1,0 +1,4 @@
+private: apenas classe interna
+protected: apenas classe interna
+public: para membros da classe e classe
+default(vazio): class e membros

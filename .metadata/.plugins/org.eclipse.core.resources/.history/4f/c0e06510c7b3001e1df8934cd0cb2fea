@@ -1,0 +1,5 @@
+package br.com.dfcodelab7.declaracaocontroleacesso.abstracts;
+
+public abstract class AbstractTest {
+
+}

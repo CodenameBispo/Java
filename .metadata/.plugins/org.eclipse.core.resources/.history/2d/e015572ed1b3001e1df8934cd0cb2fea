@@ -1,0 +1,11 @@
+package br.com.dfcodelab7.operadores.atribuicao;
+
+public class OperadoresAtribuicaoTest {
+	
+	public static void main(String[] args) {
+		// =, +=, -= , *= , /= , %= -> Atribuição Abreviados/Compostos
+		
+		int resultado = 10 + 20;
+		System.out.println(resultado);
+	}
+}

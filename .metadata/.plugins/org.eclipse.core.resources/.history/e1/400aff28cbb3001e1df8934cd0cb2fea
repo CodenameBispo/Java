@@ -1,0 +1,18 @@
+package br.com.dfcodelab7.declaracaocontroleacesso.produto;
+
+import java.math.BigDecimal;
+
+public class ProdutoTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Produto produto = new Produto();
+		produto.detalhesDoProduto = ""; //public
+		produto.preencherDadosDoProduto();		
+		produto.limparNomeDoProduto(); //protected
+		produto.qualEhAMarca(); 
+		produto.valorDoProduto = BigDecimal.ONE; // protected
+		produto.marca = ""; //default
+	}
+
+}

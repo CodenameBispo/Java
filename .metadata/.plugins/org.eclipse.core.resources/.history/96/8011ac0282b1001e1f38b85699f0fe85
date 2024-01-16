@@ -1,0 +1,6 @@
+package br.com.dfcodelab.declaracaocontroleacesso.fiscal;
+
+public class Fiscal {
+	
+	Produto produto;
+}
