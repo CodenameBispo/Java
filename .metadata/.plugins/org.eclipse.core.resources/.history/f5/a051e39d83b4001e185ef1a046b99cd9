@@ -1,0 +1,11 @@
+package com.loiane.cursojava.lab13;
+
+public class exercicio9 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		
+	}
+}

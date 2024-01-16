@@ -3,4 +3,6 @@
     <fullyQualifiedTypeName name="br.com.dfcodelab7.declaracaocontroleacesso.produto.Produto"/>
     <fullyQualifiedTypeName name="br.com.dfcodelab7.declaracaocontroleacesso.abstracts.AbstractTest"/>
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
