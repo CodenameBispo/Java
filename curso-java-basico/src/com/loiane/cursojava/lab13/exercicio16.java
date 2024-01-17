@@ -10,20 +10,40 @@ public class exercicio16 {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Quantos metros quadrados serão pintados ? ");
-		double areaPintada = scan.nextInt();
+		int areaPintada = scan.nextInt();
+		int litrosTotais = 0;
+		// 1 litro cobre 3m²
+		// 18 litros R$ 80 		
 		
-		// 1 litro cobre 6m²
-		// 18 litros R$ 80 
-		// 3,6 litros R$ 25
+		if (areaPintada % 3 == 0 ) {
+			
+			 litrosTotais = areaPintada/3;
+			
+		} else {
+			
+			 litrosTotais = areaPintada / 3 + 1;
+		}
 		
-		double litrosTotais = areaPintada / 3;
 		System.out.println("O cliente vai precisar de " + litrosTotais + " litros de tinta");
 		
 		int preco= 80;		
-		double nlatas = litrosTotais/18;
+		int nlatas = litrosTotais/18;
 		
-		//terminar, precisa de if
+		if (litrosTotais % 18 == 0 ) {
+			
+			nlatas = litrosTotais/18;
+			
+		} else if( nlatas < 1 ) {
+			
+			nlatas = 1;
+			
+		} else {
+			
+			nlatas = litrosTotais/18 + 1 ;
+		}
 		
+		System.out.println("O cliente precisará de " + nlatas + " lata(s) !");
+		System.out.println("O preço total será de R$ " + preco*nlatas );
 		
 		
 		
