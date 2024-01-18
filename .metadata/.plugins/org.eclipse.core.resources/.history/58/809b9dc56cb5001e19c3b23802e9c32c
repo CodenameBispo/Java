@@ -1,0 +1,39 @@
+package com.loiane.cursojava.lab1415;
+
+import java.util.Scanner;
+
+public class exercicio19 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite um valor inteiro: ");
+		int valor = scan.nextInt();
+		int cen = 0;
+		int dez = 0;		
+		int uni = 0;
+		int resto = 0;
+		
+		if(valor > 0 && valor < 1000) {
+			
+			if(valor % 100 == 0) {
+				cen = valor/100;
+			} else {				
+				cen = valor/100;
+				resto = valor%100;
+				dez = resto / 10;
+				
+				if(dez % 10 != 0) {
+					uni = dez%10;
+				}
+			}
+			
+			System.out.println(valor + " = " +);
+		}else {
+			System.out.println("O valor é Invalido.");
+		}
+		
+		
+	}
+}
