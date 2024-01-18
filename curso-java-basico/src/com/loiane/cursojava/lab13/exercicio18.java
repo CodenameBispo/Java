@@ -13,9 +13,9 @@ public class exercicio18 {
 		System.out.println("Qual a velocidade de download? ");
 		double vel = scan.nextDouble();
 		double velB = vel / 8;
-		double tempos = size/velB;
+		double tempo = (size/velB)/ 60;
 		
-		System.out.println("O tempo estimado é de " + tempos + " segundos");
+		System.out.println("O tempo estimado é de " + tempo + " minutos");
 	}
 
 }

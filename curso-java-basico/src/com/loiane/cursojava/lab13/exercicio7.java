@@ -10,7 +10,7 @@ public class exercicio7 {
 		
 		System.out.println("Digite o lado do quadrado:");
 		double l = scan.nextDouble();
-		double area	= l * l;
+		double area	= Math.pow(l, 2);
 		
 		System.out.println("A área do quadrado é : " + area);
 		System.out.println("O dobro da Área é : " + area*2);
