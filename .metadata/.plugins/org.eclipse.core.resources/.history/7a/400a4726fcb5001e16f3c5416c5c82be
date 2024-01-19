@@ -1,0 +1,32 @@
+package com.loiane.cursojava.lab1415;
+
+import java.util.Scanner;
+
+public class exercicio26 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Qual o tipo de combustível?");
+		System.out.println("G - Gasolina | A - Alcool");
+		String comb = scan.next();
+		
+		System.out.println("Quantos litros serão abaastecidos?");
+		int litros = scan.nextInt();
+		double preco = 0;
+		
+		if (comb.equalsIgnoreCase("a")) {
+			
+			preco = litros*1.90;
+			System.out.println("O preço por " + litros + " litros de Alcool é: R$ " + preco);
+			
+		} else {
+			
+			preco = litros*2.50;
+			System.out.println("O preço por " + litros + " litros de Gasolina é: R$ " + preco);
+		}
+		
+		
+	}
+}

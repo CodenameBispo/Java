@@ -1,0 +1,18 @@
+package com.loiane.cursojava.aula19;
+
+public class Arrays {
+	
+	public static void main(String[] args) {
+		
+		double tempDia001 = 31.3;
+		double tempDia002 = 33.7;
+		double tempDia003 = 33.7;
+		double tempDia004 = 33.7;
+		double tempDia005 = 33.7;
+		double tempDia006 = 33.7;
+		double tempDia007 = 33.7;
+		double tempDia008 = 33.7;
+		double tempDia009 = 33.7;
+		double tempDia0010 = 33.7;
+	}
+}
