@@ -1,0 +1,29 @@
+package com.loiane.cursojava.lab1617;
+
+import java.util.Scanner;
+
+public class exercicio28 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Quantos CDs possui?");
+		int cd = scan.nextInt();
+		
+		double soma =0 ; 				
+		double media = 0;
+		for (int i = 0 ; i < cd ; i++) {
+			
+			System.out.println("Digite o preço do " + (i+1) +  "º CD");			
+			
+			soma += scan.nextInt();		
+			
+			
+			
+		}
+		
+		media = soma / cd;
+		System.out.println("A média de preço dos Cds é de R$ " + media);
+	}	
+}

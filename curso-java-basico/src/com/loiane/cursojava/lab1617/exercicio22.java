@@ -13,13 +13,13 @@ public class exercicio22 {
 		
 		if(num % 2 != 0 ) {
 			
-			for (int i = 3; i <= 9 ; ) {
+			for (int i = 3; i <= 7 ; ) {
 				
 				if(num % i != 0 || num == i) {
 					
 					i += 2;
 					
-					if(i == 9 && num % i !=0) {
+					if(i == 7) {
 						System.out.println("É primo");
 					}
 					
