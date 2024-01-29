@@ -1,0 +1,18 @@
+package com.loiane.cursojava.lab4446.Exercicio2;
+
+public class Figura2D extends FiguraGeometrica implements DimensaoSuperficial{
+
+	@Override
+	public double calcularArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double calcularArea(double base, double altura) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	
+}

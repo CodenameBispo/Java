@@ -1,0 +1,46 @@
+package com.loiane.cursojava.lab2527;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ContaCorrente {
+	
+	int agencia;
+	int NumeroConta;
+	int digito;
+	double saldo;
+	boolean tipoEspecial;
+	double limiteConta;
+	
+	double fazerSaque(double valorDoSaque) {
+		
+		if(valorDoSaque > saldo+limiteConta) {
+			System.out.println("Não é possível realizar o saque!");
+			String message = "Saldo insuficiente";
+		} else {
+			saldo -= valorDoSaque;
+			String message = "Saque efetuado!";
+		}
+		
+		return message;
+	}
+	
+	double depositar(double valorDoDeposito) {
+		
+		saldo += valorDoDeposito;
+		
+		return saldo;
+	}
+	
+	boolean verificarChequeEspecial() {
+		
+		if(saldo < 0) {
+			return true;
+		} else {
+			return false;
+		}		
+	}
+	
+	
+	
+}	

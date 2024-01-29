@@ -1,0 +1,10 @@
+package com.loiane.cursojava.aula41;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

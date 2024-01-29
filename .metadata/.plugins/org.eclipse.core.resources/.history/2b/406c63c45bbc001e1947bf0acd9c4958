@@ -1,0 +1,25 @@
+package com.loiane.cursojava.lab4446.Exercicio2;
+
+public class Piramide extends Figura3D{
+
+	private double arestaBase;
+	private double altura;
+	private double apotema;
+	
+	private Figura2D base;
+	
+	public double getBase() {
+		return base;
+	}
+	public void setBase(double base) {
+		this.base = base;
+	}
+	public double getAltura() {
+		return altura;
+	}
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+	
+	
+}

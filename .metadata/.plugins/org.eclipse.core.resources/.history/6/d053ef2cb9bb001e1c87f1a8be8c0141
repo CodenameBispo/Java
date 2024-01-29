@@ -1,0 +1,10 @@
+package com.loiane.cursojava.aula50;
+
+public class UsandoThrows {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

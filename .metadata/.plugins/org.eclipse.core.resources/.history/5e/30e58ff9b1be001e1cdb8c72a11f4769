@@ -1,0 +1,7 @@
+package com.loiane.cursojava.lab4752;
+
+public class ContatoNaoExisteException extends Exception{
+	
+	private String nomeContato;
+	
+}

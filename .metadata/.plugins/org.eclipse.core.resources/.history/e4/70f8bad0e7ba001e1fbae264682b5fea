@@ -1,0 +1,6 @@
+package com.loiane.cursojava.aula44;
+
+public abstract class Ave {
+	
+	public abstract void voar();
+}

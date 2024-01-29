@@ -1,0 +1,19 @@
+package com.loiane.cursojava.lab3643.exercicio3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Animal camelo = new Animal("Camelo", 150, "Amarelo", "Terra", 2.0);
+		
+		Peixe tubarao = new Peixe("Barbatanas e cauda");
+		tubarao.setComprimento(300);	
+		tubarao.setNome("Tubarão");
+		tubarao.setVelocidade(1.5);
+		
+		Mamifero urso = new Mamifero();
+		
+		
+		
+	}
+}

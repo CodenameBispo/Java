@@ -1,0 +1,6 @@
+package com.loiane.cursojava.lab4446.Exercicio2;
+
+public interface DimensaoVolumetrica {
+	
+	double calcularVolume();
+}

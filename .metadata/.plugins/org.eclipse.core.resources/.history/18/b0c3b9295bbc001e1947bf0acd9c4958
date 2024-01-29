@@ -1,0 +1,7 @@
+package com.loiane.cursojava.lab4446.Exercicio2;
+
+public class Circulo extends Figura2D{
+
+	private double raio;
+	
+}

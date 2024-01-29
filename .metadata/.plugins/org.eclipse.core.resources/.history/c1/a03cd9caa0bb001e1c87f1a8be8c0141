@@ -1,0 +1,44 @@
+package com.loiane.cursojava.lab36;
+
+public class Agenda {
+	
+	private Contato[] contatos = new Contato[3];
+	private String[][] contatos = new String[3][3];
+	private String nomeAgenda;
+	
+
+
+	public String[][] getContatos() {
+		return contatos;
+	}
+	public void setContatos(String[][] contatos) {
+		this.contatos = contatos;
+	}
+	public String getNomeAgenda() {
+		return nomeAgenda;
+	}
+	public void setNomeAgenda(String nomeAgenda) {
+		this.nomeAgenda = nomeAgenda;
+	}
+	
+	public int mostrarContato(int valor) {
+		System.out.println("Dados do contato" + contatos[0][valor]);
+		for(int i = 1; i>3 ; i++) {
+			System.out.println(contatos[valor][i]);	
+		}
+		
+	}
+	
+	public void mostrarTodosContatos() {
+		
+		System.out.println("Lista de contatos: ");
+		
+		for(String[] contato : contatos) {
+			int cont=1;
+			System.out.println(cont + "- " + contato[0]);
+			cont++;
+		}
+	}
+
+	
+}

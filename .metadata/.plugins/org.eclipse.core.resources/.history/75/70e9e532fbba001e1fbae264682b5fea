@@ -1,0 +1,29 @@
+package com.loiane.cursojava.lab3643.Exercicio1;
+
+import java.util.Scanner;
+
+public class Teste {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		Conta conta = new Conta();
+		String[] contas = new String[100];
+		do {
+			
+			System.out.println("Bem vindo ao Agroti$");
+			System.out.println("O que deseja fazer?");
+			System.out.println("1- Criar Contas");
+			System.out.println("2- Sacar");
+			System.out.println("3- Depositar");
+			System.out.println("4- Calcular rendimento");
+			System.out.println("5- mostrar dados da conta");
+			int opc = scan.nextInt();
+			
+			switch(opc) {
+			
+			case 1: 
+			}
+		}while(1!=0);
+	}
+}

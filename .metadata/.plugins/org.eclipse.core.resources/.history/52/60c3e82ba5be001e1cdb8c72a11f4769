@@ -1,0 +1,29 @@
+package com.loiane.cursojava.lab4446.Exercicio3;
+
+public abstract class FiguraGeometrica {
+	
+	private String nome;
+	private String cor;
+	private FiguraGeometrica[] figuras;
+	
+	public FiguraGeometrica[] getFiguras() {
+		return figuras;
+	}
+	public void setFiguras(FiguraGeometrica[] figuras) {
+		this.figuras = figuras;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getCor() {
+		return cor;
+	}
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+	
+	
+}

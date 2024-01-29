@@ -1,0 +1,19 @@
+package com.loiane.cursojava.lab35;
+
+public class exercicio1 {
+	
+	
+	public static int calcularFiboNaacci(int n) {
+		int var =-1;
+		int fib = 0;
+		for(int i=0; i<=n ; i++) {
+			
+			System.out.println(fib);
+			fib += Math.abs(var);
+			var = fib - Math.abs(var);
+			
+			
+		}
+		return fib;
+	}
+}

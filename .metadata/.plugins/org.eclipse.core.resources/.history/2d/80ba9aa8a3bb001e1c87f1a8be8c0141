@@ -1,0 +1,19 @@
+package com.loiane.cursojava.lab36;
+
+public class Exercicio2 {
+	
+	public static void main(String[] args) {
+		
+		Pessoa aluno = new Aluno();
+		Pessoa professor = new Professor();
+		Curso curso = new Curso();
+		
+		String[] alunos = curso.getAlunos();
+		
+		alunos[0] = "Luffy";
+		alunos[1] = "Zoro";
+		alunos[2] = "Nami";
+		alunos[3] = "Chopper";
+		alunos[4] = "Sanji";
+	}
+}	

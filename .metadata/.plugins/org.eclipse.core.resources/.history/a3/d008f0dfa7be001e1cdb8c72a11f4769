@@ -1,0 +1,25 @@
+package com.loiane.cursojava.lab4752;
+
+import java.util.Scanner;
+
+public class Agenda {
+	
+	Scanner scan = new Scanner(System.in);
+	
+	public static void adicionarContato() {
+		Scanner scan = new Scanner(System.in);
+		Contato contato = new Contato();
+		
+		System.out.println("Digite o nome do contato");
+		String nome = scan.nextLine();
+		
+		System.out.println("Digite o telefone com o DDD");
+		String tel = scan.next();
+		
+		
+	}
+	
+	public void consultarContato() {
+		
+	}
+}

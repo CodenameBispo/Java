@@ -1,0 +1,41 @@
+package com.loiane.cursojava.lab36;
+
+import java.util.Scanner;
+
+public class Teste {
+	
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int menu = 0;
+		
+		Agenda agenda = new Agenda();
+		Contato contato = new Contato();
+		
+		String[][] contatos = agenda.getContatos();
+		String[] contato1 = contato.getContato();
+		
+		System.out.println("Digite o nome da agenda");
+		String nomeAgenda = scan.nextLine();
+		agenda.setNomeAgenda(nomeAgenda);
+		
+		for(int i=0; i < agenda.getContatos().length; i++) {
+			for(int j=0; j < agenda.getContatos()[i].length; j++) {
+				if(j == 0) {
+					System.out.println("Digite o nome do " + (i+1) + "º contato");
+					contato.setNome(scan.nextLine());
+					contatos[i][j] = contato.getNome();
+				
+				} else if(j == 1) {
+					System.out.println("Digite o telefone do " + (i+1) + "º contato");
+					contato.setTelefone(scan.nextLine());
+					contatos[i][j] = contato.getNome();
+				}
+				
+				
+				
+			}
+		}
+	}
+}

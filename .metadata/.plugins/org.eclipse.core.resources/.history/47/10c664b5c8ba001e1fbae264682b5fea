@@ -1,0 +1,74 @@
+package com.loiane.cursojava.lab2833;
+
+import java.text.DecimalFormat;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Exerc3 {
+
+	public static void main(String[] args) {
+		
+		DecimalFormat formato = new DecimalFormat("#.##");
+		Random random = new Random();
+		Scanner scan = new Scanner(System.in);
+		int disc = -1;
+		int inf = 4;
+		int sup = 10;		
+		
+		Aluno aluno = new Aluno();
+		aluno.setMatricula(001);
+		aluno.setNome("Lucas");
+		aluno.setSobrenome("Bispo");
+		aluno.setCurso("Análise e desenvolvimento de sistemas");
+		
+		String[] disciplinas = aluno.getDisciplinas();
+		disciplinas[0] = "Web";
+		disciplinas[1] = "Mobile";
+		disciplinas[2] = "Dados";
+		aluno.setDisciplinas(disciplinas);
+		
+		double[][] notas = aluno.getNotas();		
+		for(int i=0; i < 3 ; i++) {
+			for(int j=0; j < 4 ; j++) {
+				System.out.println("Digite a " + (j+1) + "ª nota da disciplina " + disciplinas[i]);
+				double nota = scan.nextDouble();
+			}
+		}
+		
+		do {
+			System.out.println("Digite a matricula do aluno");
+			int matricula = scan.nextInt();
+			
+			if(matricula == aluno.getMatricula()) {
+				System.out.println("Aluno: " + aluno.getNome() + " " + aluno.getSobrenome());
+				
+				System.out.println("Matérias matriculadas");
+				String [] disciplinasAluno = aluno.getDisciplinas();
+				for(String disciplina : disciplinasAluno) {
+					System.out.println(disciplina);
+				}
+				
+				System.out.println("\n Qual matéria deseja saber a situação?");
+				System.out.println("1 - Web");
+				System.out.println("2 - Mobile");
+				System.out.println("3 - Dados");
+				int materia = scan.nextInt();			
+				disc = materia-1;
+				
+				double media = aluno.verMedia(disc);
+				
+				if(media >= 7) {
+					System.out.println("Aprovado em " + disciplinas[materia-1]);
+					System.out.println();
+				} else {
+					System.out.println("Reprovado em " + disciplinas[materia-1]);
+					System.out.println();
+				}
+				
+			} else {
+				System.out.println("Aluno não matriculado");
+			}
+		} while(disc < 1);
+	}
+
+}

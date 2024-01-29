@@ -1,0 +1,47 @@
+package com.loiane.cursojava.lab19;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class exercicio17 {
+	
+	public static void main(String[] args) {
+		
+		DecimalFormat formato = new DecimalFormat("#.##");
+		Scanner scan = new Scanner(System.in);
+		
+		int[] vetorA = new int[10];
+		int contSup = 0;
+		
+		for(int i=0; i<10 ; i++) {
+			
+			System.out.println("Digite o " + (i+1) + " valor do vetor A");
+			vetorA[i]=scan.nextInt();			
+			if(vetorA[i] > 35) {				
+				contSup++;
+			}
+		}
+		
+		int[] vetorSup = new int[contSup];
+		int j=0;
+		for (int i=0; i<10 ; i++) {
+			
+			if(vetorA[i] > 35) {
+				vetorSup[j] = vetorA[i];
+				j++;
+			}
+		}
+		System.out.println("Idades maiores que 35 anos: ");
+		for (int i=0; i<contSup ; i++) {
+			
+			if(i == contSup-1) {
+				System.out.println(vetorSup[i]);
+			} else {
+				System.out.println(vetorSup[i] + " , ");
+			}
+		}
+		
+		System.out.println("Soma dos valores menores que 15 =  " + contSup);
+		
+	}
+}

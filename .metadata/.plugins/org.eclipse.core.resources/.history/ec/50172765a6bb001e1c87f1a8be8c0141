@@ -1,0 +1,36 @@
+package com.loiane.cursojava.lab36;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		Aluno aluno = new Aluno();
+		Professor professor = new Professor();
+		Curso curso = new Curso();
+		
+		curso.setNomeCurso("Combate");
+		
+		String[] alunos = curso.getAlunos();
+		
+		alunos[0] = "Luffy";
+		alunos[1] = "Zoro";
+		alunos[2] = "Nami";
+		alunos[3] = "Chopper";
+		alunos[4] = "Sanji";
+		
+		curso.setAlunos(alunos);
+		
+		double[] notas = aluno.getNotas();
+		
+		System.out.println("Curso de " + curso.getNomeCurso());
+		for(int i = 0; i < aluno.getNotas().length; i++) {
+			System.out.println("Digite a " + (i+1) + "ª nota do Aluno + " + alunos[i]);
+			double nota = scan.nextDouble();			
+			notas[i]= nota;			
+		}
+		
+	}
+}	

@@ -1,0 +1,10 @@
+package com.loiane.cursojava.lab2833;
+
+public class Lampada {
+	
+	String comodo;
+	int potencia;
+	String tipo;
+	String corDaLuz;
+	
+}

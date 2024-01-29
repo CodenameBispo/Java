@@ -1,0 +1,36 @@
+package com.loiane.cursojava.lab3643.Exercicio22;
+
+public class ReceitaFederal {
+
+	public Contribuinte contribuinte;
+
+	public ReceitaFederal() {
+	}
+	
+	public ReceitaFederal(Contribuinte contribuinte) {
+		this.contribuinte = contribuinte;
+	}
+
+
+	public double calculoPessoaFisica(Contribuinte contri) {
+		return 0.0;
+	}
+	
+	public double calculoPessoaJuridica(Contribuinte contri) {
+		return 0.0;
+	}
+
+	public double aliquiota(double rendaBruta) {
+		if (rendaBruta <= 1400) {
+			return 0;
+		} else if (rendaBruta <= 2100) {
+			return 0.10;
+		} else if (rendaBruta <= 2800) {
+			return 0.15;
+		} else if (rendaBruta <= 3600) {
+			return 0.25;
+		} else {
+			return 0.30;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+package com.loiane.cursojava.lab2527;
+
+public class ContatoAgenda {
+	
+	String nome;
+	String sobrenome;
+	String telefone;
+	boolean ehFavorito;
+	boolean temWhats;
+	String email;
+	String apelido;
+}

@@ -1,0 +1,11 @@
+package com.loiane.cursojava.lab35;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		exercicio1.calcularFiboNaacci(12);
+
+	}
+
+}

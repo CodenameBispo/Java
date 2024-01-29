@@ -1,0 +1,84 @@
+package com.loiane.cursojava.lab2833;
+
+public class Aluno {
+	
+	private String nome;
+	private String sobrenome;	
+	private String curso;
+	private String[] disciplinas = new String[3];
+	private int matricula; 
+	private double[][] notas = new double[3][4];	
+
+	package String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+
+
+	public String getCurso() {
+		return curso;
+	}
+
+
+	public void setCurso(String curso) {
+		this.curso = curso;
+	}
+
+
+	public String[] getDisciplinas() {
+		return disciplinas;
+	}
+
+
+	public void setDisciplinas(String[] disciplinas) {
+		this.disciplinas = disciplinas;
+	}
+
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+
+
+	public double[][] getNotas() {
+		return notas;
+	}
+
+
+	public void setNotas(double[][] notas) {
+		this.notas = notas;
+	}
+	
+	double verMedia(int disc) {
+		
+		double soma =0;
+		
+		for(int i=0; i < 3 ; i++) {
+			
+			soma += notas[disc][i];	
+		}
+		
+		double media = soma/4;
+		
+		return media;
+	}
+}

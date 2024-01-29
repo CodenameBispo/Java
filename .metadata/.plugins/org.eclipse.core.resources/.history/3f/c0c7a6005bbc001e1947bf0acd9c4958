@@ -1,0 +1,12 @@
+package com.loiane.cursojava.lab4446.Exercicio2;
+
+public class Triangulo extends Figura2D{
+
+	@Override
+	public double calcularArea(double base, double altura) {
+		
+		return 0;
+	}
+
+
+}

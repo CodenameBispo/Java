@@ -1,0 +1,11 @@
+package com.loiane.cursojava.lab3643.Exercicio1;
+
+public class Teste {
+	
+	public static void main(String[] args) {
+		
+		do {
+			
+		}while(0=0);
+	}
+}

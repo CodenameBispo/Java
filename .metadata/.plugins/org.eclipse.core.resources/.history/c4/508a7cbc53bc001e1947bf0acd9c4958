@@ -1,0 +1,22 @@
+package com.loiane.cursojava.lab3643.Exercicio2;
+
+public class PessoaFisica extends Contribuinte{
+	
+	private String cpf;
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	@Override
+	public double calcularImposto() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+}

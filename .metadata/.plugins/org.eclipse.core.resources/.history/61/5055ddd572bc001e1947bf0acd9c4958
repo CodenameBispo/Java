@@ -1,0 +1,15 @@
+package com.loiane.cursojava.lab3643.exercicio3;
+
+public class Urso extends Mamifero{
+
+	private String alimentoFavorito;
+
+	public Urso(String alimentoFavorito) {
+		super();
+		this.alimentoFavorito = alimentoFavorito;
+	}
+	
+	
+	
+	
+}

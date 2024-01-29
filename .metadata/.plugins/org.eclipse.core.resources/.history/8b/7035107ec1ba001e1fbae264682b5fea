@@ -1,0 +1,17 @@
+package com.loiane.cursojava.lab2833;
+
+public class Exercicio1 {
+	
+	public static void main(String[] args) {
+		
+		Lampada lamp = new Lampada();
+		lamp.comodo = "Sala";
+		lamp.corDaLuz = "Branca";
+		lamp.tipo = "LED";
+		lamp.potencia = 15;
+		
+		System.out.println(lamp.ligarLampada());
+		System.out.println(lamp.desligarLampada());
+		
+	}
+}

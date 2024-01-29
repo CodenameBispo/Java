@@ -1,0 +1,10 @@
+package com.loiane.cursojava.lab3643.Exercicio22.enums;
+
+public class ReceitaFederalTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

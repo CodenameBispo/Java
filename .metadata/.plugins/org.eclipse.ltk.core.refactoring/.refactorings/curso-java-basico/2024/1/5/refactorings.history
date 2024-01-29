@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.loiane.cursojava.lab4446.Exercicio2&apos; to &apos;curso-java-basico/src/com.loiane.cursojava.lab4446.Exercicio2&apos;&#x0A;- Original project: &apos;curso-java-basico&apos;&#x0A;- Destination element: &apos;curso-java-basico/src/com.loiane.cursojava.lab4446.Exercicio2&apos;&#x0A;- Original element: &apos;curso-java-basico/src/com.loiane.cursojava.lab4446.Exercicio2&apos;" description="Copy package" destination="/src&lt;com.loiane.cursojava.lab4446.Exercicio2" element1="/src&lt;com.loiane.cursojava.lab4446.Exercicio2" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1706532542536" version="1.0"/>
+</session>

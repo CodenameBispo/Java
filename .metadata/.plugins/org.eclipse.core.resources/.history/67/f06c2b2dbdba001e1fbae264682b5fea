@@ -1,0 +1,42 @@
+package com.loiane.cursojava.aula36;
+
+public class Teste {
+	
+	public static void main(String[] args) {
+		
+		Contato contato = new Contato();
+		
+		contato.setNome("Tyrion");
+		
+		
+		//criar o objeto endereço
+		
+		Endereco end = new Endereco();
+		end.setNomeRua("Travessa do tranco");
+		end.setNumero("n/a");
+		end.setCidade("Hogsmead");
+		end.setEstado("London");
+		end.setCep("8498514");
+		end.setPais("Irlanda");
+		
+		contato.setEndereco(end);
+		
+		//relacionamento tem um telefone
+		Telefone tel = new Telefone();
+		tel.setTipo("Celular");
+		tel.setDdd("41");
+		tel.setNumero("998484808");
+		contato.setTelefone(tel)
+		System.out.println(contato.getNome());
+		//System.out.println(contato.getEndereco().getCidade());
+		//não é seguro pois pode dar erro
+		
+		if(contato.getEndereco() != null) {
+			System.out.println(contato.getEndereco().getCidade());
+		}
+		
+		if(contato.getTelefone() != null) {
+			System.out.println(contato.getTelefone().getDdd() + " " + contato.getTelefone().getNumero());
+		}
+	}
+}

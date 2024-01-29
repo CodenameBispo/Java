@@ -1,0 +1,22 @@
+package com.loiane.cursojava.lab3643.Exercicio22;
+
+import com.loiane.cursojava.lab3643.Exercicio22.enums.TipoPessoa;
+
+public class Contribuinte {
+	private String nome;
+	private Double rendaBruta;
+	private TipoPessoa tipoPessoa;
+
+	public Contribuinte() {
+	}
+
+	public Contribuinte(String nome, Double rendaBruta, TipoPessoa tipoPessoa) {
+		super();
+		this.nome = nome;
+		this.rendaBruta = rendaBruta;
+		this.tipoPessoa = tipoPessoa;
+	}
+	
+	
+
+}

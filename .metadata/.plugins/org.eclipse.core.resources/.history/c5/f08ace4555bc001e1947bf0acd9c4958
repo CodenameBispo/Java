@@ -1,0 +1,18 @@
+package com.loiane.cursojava.lab3643.Exercicio2;
+
+import java.util.Scanner;
+
+public class Teste {
+	
+	public static void main(String[] args) {
+		
+		PessoaFisica p1 = new PessoaFisica();
+		p1.setNome("Contribuinte 01");
+		p1.setRendaBruta(1000);
+		
+		PessoaJuridica p2 = new PessoaJuridica();
+		p2.setNome("Contribuinte 02");
+		p2.setRendaBruta(3000);
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.loiane.cursojava.lab3643.Exercicio22.enums;
+
+import com.loiane.cursojava.lab3643.Exercicio2.Contribuinte;
+
+public class ReceitaFederalTest {
+
+	public static void main(String[] args) {
+		
+		Contribuinte contribuinte = new Contribuinte() {
+			contribuinte.
+			
+		}
+
+	}
+
+}

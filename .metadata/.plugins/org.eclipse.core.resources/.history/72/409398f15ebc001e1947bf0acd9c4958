@@ -1,0 +1,31 @@
+package com.loiane.cursojava.lab4446.Exercicio2;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Quadrado f1 = new Quadrado();
+		f1.setLado(2);
+		
+		Circulo f2 = new Circulo();
+		f2.setRaio(2);
+		
+		Triangulo f3 = new Triangulo();
+		f3.setAltura(2);
+		f3.setBase(3);
+		
+		Cubo f4 = new Cubo();
+		f4.setLado(3);
+		
+		Piramide f5 = new Piramide();
+		f5.setAltura(3);
+		f5.setApotema(4);
+		f5.setArestaBase(2);
+		f5.setNumPoliBase(4);
+		
+		Cilindro f6 = new Cilindro();
+		f6.setAltura(3);
+		f6.setRaio(2);
+	}
+
+}

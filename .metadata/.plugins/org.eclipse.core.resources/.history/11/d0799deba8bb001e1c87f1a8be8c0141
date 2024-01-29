@@ -1,0 +1,54 @@
+package com.loiane.cursojava.lab36;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		Aluno aluno = new Aluno();
+		Professor professor = new Professor();
+		Curso curso = new Curso();
+		
+		
+		//atribuindo valores para o obj aluno
+		double[] notas = new double[4];
+		notas[0]= 10;
+		notas[1] = 10;
+		notas[2] = 10;
+		notas[3] = 10;
+		aluno.setNotas(notas);
+		aluno.setNome("Joao");
+		aluno.setMatricula("1");
+		
+		//criando um vetor de obj(Alunos)
+		Aluno[] alunos = new Aluno[1];
+		alunos[0]= aluno;
+				
+		curso.setNomeCurso("Combate");	
+		curso.setAlunos(alunos);
+		System.out.println(curso.getAlunos());
+
+
+		
+//		Aluno[] alunos = curso.getAlunos();
+//		
+//		curso.setAlunos(alunos);
+//		
+//		for(Aluno aluno1: alunos) {
+//			System.out.println(aluno1);
+//		}
+//		
+		
+//		double[] notas = aluno.getNotas();
+		
+		System.out.println("Curso de " + curso.getNomeCurso());
+		for(int i = 0; i < aluno.getNotas().length; i++) {
+			System.out.println("Digite a " + (i+1) + "ª nota do Aluno + " + alunos[i]);
+			double nota = scan.nextDouble();			
+			notas[i]= nota;			
+		}
+		
+	}
+}	

@@ -1,0 +1,19 @@
+package com.loiane.cursojava.lab2527;
+
+
+public class Exerc3 {
+
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno();
+		aluno.matricula = 001;
+		aluno.nome = "Lucas";
+		aluno.sobrenome = "Bispo" ;
+		aluno.curso = "Análise e desenvolvimento de sistemas";
+		aluno.disciplinas[1] = "Desenvolvimento Web";
+		aluno.disciplinas[2] = "Orientação A Objetos";
+		aluno.disciplinas[3] = "Gestão de Projetos";
+		
+	}
+
+}

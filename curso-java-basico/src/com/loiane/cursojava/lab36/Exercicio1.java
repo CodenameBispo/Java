@@ -1,0 +1,50 @@
+package com.loiane.cursojava.lab36;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+	
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int menu = 0;
+		
+		Agenda agenda = new Agenda();
+		Contato contato = new Contato();
+		
+		String[][] contatos = agenda.getContatos();
+		
+		System.out.println("Digite o nome da agenda");
+		String nomeAgenda = scan.nextLine();
+		agenda.setNomeAgenda(nomeAgenda);
+		
+		for(int i=0; i < agenda.getContatos().length; i++) {
+			
+			
+			System.out.println("Digite o nome do " + (i+1) + "º contato");
+			contato.setNome(scan.nextLine());
+			contatos[i][0] = contato.getNome();
+			
+			
+			System.out.println("Digite o telefone do " + (i+1) + "º contato");
+			contato.setTelefone(scan.nextLine());
+			contatos[i][1] = contato.getTelefone();
+				
+			System.out.println("Digite o email do " + (i+1) + "º contato");
+			contato.setEmail(scan.nextLine());
+			contatos[i][2] = contato.getEmail();
+			
+		}
+		
+		agenda.setContatos(contatos);
+		
+		agenda.mostrarTodosContatos();
+		
+		System.out.println("De qual contato deseja ver os dados?");
+		int indice = scan.nextInt();
+		agenda.mostrarContato(indice);
+		
+		
+	}
+}

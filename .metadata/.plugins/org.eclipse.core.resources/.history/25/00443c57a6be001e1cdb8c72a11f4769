@@ -1,0 +1,13 @@
+package com.loiane.cursojava.lab4752;
+
+public class Teste {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Bem vindo a sua agenda!");
+		System.out.println("Digite :");
+		System.out.println("1 - ");
+		System.out.println();
+		System.out.println();
+	}
+}

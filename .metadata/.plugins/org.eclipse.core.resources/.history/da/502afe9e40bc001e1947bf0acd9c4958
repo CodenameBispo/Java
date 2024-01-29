@@ -1,0 +1,79 @@
+package com.loiane.cursojava.lab3643.Exercicio1;
+
+import java.util.Scanner;
+
+public class ContaBancaria {
+	
+	private String nomeCliente;
+	private int numConta; 
+	private double saldo;
+	private String tipoConta;	
+	
+	ContaEspecial especial = new ContaEspecial();
+	Conta conta = new Conta();
+	
+	public String getTipoConta() {
+		return tipoConta;
+	}
+	public void setTipoConta(String tipoConta) {
+		this.tipoConta = tipoConta;
+	}
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
+	}
+	public int getNumConta() {
+		return numConta;
+	}
+	public void setNumConta(int numConta) {
+		this.numConta = numConta;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public double sacar(double valor) {
+		if(saldo - valor > 0) {
+			System.out.println("Saldo insuficiente!");
+			return saldo;
+		}
+		
+		saldo -= saldo;
+		System.out.println("Saque efetuado com sucesso!");
+		return saldo;
+	}
+	
+	public double depositar(double valor) {
+		return saldo + valor;
+	}
+	
+	public void criarConta() {
+		
+		do {
+			
+		}while(false);
+		
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Qual o tipo de conta?");
+		System.out.println("1 - Normal , 2 - Especial , 3- Poupança");
+		int escolha = scan.nextInt();
+		
+		System.out.println("Qual o nome do titular da conta");
+		String nome = scan.nextLine();		
+		switch(escolha) {
+		case 1 :
+				setNumConta(conta.getContador());
+				
+		case 2 :
+				especial.setLimite(ContaEspecial.criarContaEspecial());
+		case 3: 	
+		}
+		
+	}
+}

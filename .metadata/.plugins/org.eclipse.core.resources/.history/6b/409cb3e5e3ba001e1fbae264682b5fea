@@ -1,0 +1,19 @@
+package com.loiane.cursojava.aula42;
+
+import com.loiane.cursojava.aula41.Constantes;
+
+public class Teste {
+	
+	public static void main(String[] args) {
+			
+		Pessoa pessoa = new Pessoa();
+		Aluno aluno = new Aluno();
+		Professor professor = new Professor();
+		
+		
+		System.out.println(Constantes);
+		
+	}
+
+
+}

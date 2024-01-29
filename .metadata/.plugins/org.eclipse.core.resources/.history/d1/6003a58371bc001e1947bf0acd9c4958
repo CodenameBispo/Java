@@ -1,0 +1,21 @@
+package com.loiane.cursojava.lab3643.exercicio3;
+
+public class Peixe extends Animal {
+
+	private String caracteristicas;
+
+	public Peixe(String nome, String comprimento, String cor, String velocidade, String caracteristicas) {
+		super(nome, comprimento, cor, velocidade);
+		super.setAmbiente("Mar");
+		this.caracteristicas = caracteristicas;
+	}
+
+	public String getCaracteristicas() {
+		return caracteristicas;
+	}
+
+	public void setCaracteristicas(String caracteristicas) {
+		this.caracteristicas = caracteristicas;
+	}
+
+}

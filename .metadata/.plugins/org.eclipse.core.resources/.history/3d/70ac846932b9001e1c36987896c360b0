@@ -1,0 +1,22 @@
+package com.loiane.cursojava.lab19;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class exercicio22 {
+	
+	public static void main(String[] args) {
+		
+		DecimalFormat formato = new DecimalFormat("#.##");
+		Scanner scan = new Scanner(System.in);
+		
+		long[] A= new long[10];
+		
+		
+		for(int i=0; i<21 ; i++) {
+			
+			A = Math.round(Math.random() * 1);
+			
+		}	
+	}
+}

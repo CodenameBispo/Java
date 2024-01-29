@@ -1,0 +1,26 @@
+package com.loiane.cursojava.lab3643.Exercicio1;
+
+import java.util.Scanner;
+
+public class Conta {
+	
+	Scanner scan = new Scanner(System.in);
+	private ContaBancaria[] contas = new ContaBancaria[100];
+	public Scanner getScan() {
+		return scan;
+	}
+	public void setScan(Scanner scan) {
+		this.scan = scan;
+	}
+	public ContaBancaria[] getContas() {
+		return contas;
+	}
+	public void setContas(ContaBancaria[] contas) {
+		this.contas = contas;
+	}
+
+	
+	
+	
+	
+}

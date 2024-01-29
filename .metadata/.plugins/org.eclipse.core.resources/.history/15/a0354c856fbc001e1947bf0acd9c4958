@@ -1,0 +1,11 @@
+package com.loiane.cursojava.lab3643.exercicio3;
+
+public class Animal {
+	
+	private String nome;
+	private String comprimento;
+	private String numPatas;
+	private String cor;
+	private String ambiente;
+	private String velocidade;
+}

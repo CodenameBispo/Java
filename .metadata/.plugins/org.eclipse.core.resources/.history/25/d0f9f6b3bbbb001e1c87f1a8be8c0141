@@ -1,0 +1,22 @@
+package com.loiane.cursojava.aula52;
+
+public class DivisaoNaoExata extends Throwable{
+	
+	private int num;
+	private int deno;
+	
+	public DivisaoNaoExata(int num, int deno) {
+		super();
+		this.num = num;
+		this.deno = deno;
+	}
+
+	@Override
+	public String toString() {
+		return "Resultado de " + num + "/" + deno + " não é ";
+	}
+	
+	
+	
+	
+}

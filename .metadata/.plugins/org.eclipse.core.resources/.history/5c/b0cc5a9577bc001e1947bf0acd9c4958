@@ -1,0 +1,15 @@
+package com.loiane.cursojava.lab3643.exercicio3;
+
+public class Mamifero extends Animal {
+
+	public Mamifero() {
+		super();
+	}
+	
+	public Mamifero() {
+		super();
+		super.setAmbiente("Terra");
+	}
+	
+	
+}

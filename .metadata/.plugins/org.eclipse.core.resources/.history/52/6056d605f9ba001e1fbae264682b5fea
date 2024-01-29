@@ -1,0 +1,21 @@
+package com.loiane.cursojava.lab3643.Exercicio1;
+
+public class ContaEspecial extends ContaBancaria{
+	
+	private double limite;
+	ContaBancaria conta = new ContaBancaria();
+	
+	
+	public double sacar(double valor) {
+		
+		if(conta.getSaldo()+limite >= valor) {
+			conta.setSaldo(conta.getSaldo() - valor);
+			System.out.println("Saque efetuado com sucesso!");
+			System.out.println("Você está usando o cheque especial!");
+			return conta.getSaldo();
+		}
+		
+		
+		
+	}
+}

@@ -1,9 +1,0 @@
-package aula07;
-
-public class Erro03 {
-	
-	public static void Main(String[] args) {
-		
-		System.out.println("Case Sensitive error");
-	}
-}

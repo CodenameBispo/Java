@@ -1,0 +1,34 @@
+package com.loiane.cursojava.lab19;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class exercicio23 {
+	
+	public static void main(String[] args) {
+		
+		DecimalFormat formato = new DecimalFormat("#.##");
+		Scanner scan = new Scanner(System.in);
+		
+		int[] vetor= new int[10];
+		boolean todosPares = true;
+		
+		
+		for(int elemento : vetor) {
+			
+			elemento = (int)Math.random();
+			if (elemento %2 !=0) {
+				todosPares = false;
+				break;
+			}			
+		}
+		
+		if(todosPares) {
+			System.out.println("Todos os elementos são pares");
+		} else {
+			System.out.println("Pelo menos um elemento não é par. Processo encerrado");
+		}
+		
+		
+	}
+}

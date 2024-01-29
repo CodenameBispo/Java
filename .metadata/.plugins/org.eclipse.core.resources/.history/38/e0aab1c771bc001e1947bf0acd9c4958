@@ -1,0 +1,20 @@
+package com.loiane.cursojava.lab3643.exercicio3;
+
+public class Peixe extends Animal {
+
+	private String caracteristicas;
+
+	public Peixe(String caracteristicas) {
+		super();
+		this.caracteristicas = caracteristicas;
+	}
+
+	public String getCaracteristicas() {
+		return caracteristicas;
+	}
+
+	public void setCaracteristicas(String caracteristicas) {
+		this.caracteristicas = caracteristicas;
+	}
+
+}

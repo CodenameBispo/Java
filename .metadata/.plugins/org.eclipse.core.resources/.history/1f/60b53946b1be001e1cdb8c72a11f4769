@@ -1,0 +1,6 @@
+package com.loiane.cursojava.lab4752;
+
+public class AgendaCheiaException extends Exception {
+	
+	
+}

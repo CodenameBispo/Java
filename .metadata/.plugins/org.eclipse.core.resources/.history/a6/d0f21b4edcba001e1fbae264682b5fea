@@ -1,0 +1,9 @@
+package com.loiane.cursojava.aula39;
+
+public class Snippet {
+	public Aluno() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
+}
+

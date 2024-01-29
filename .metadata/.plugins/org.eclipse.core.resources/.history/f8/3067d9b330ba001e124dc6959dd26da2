@@ -1,0 +1,11 @@
+package com.loiane.cursojava.aula27;
+
+public class Carro2 {
+	
+	String marca;
+	String modelo;
+	int numPassageiros;
+	double capCombustivel;
+	double consumo;
+
+}

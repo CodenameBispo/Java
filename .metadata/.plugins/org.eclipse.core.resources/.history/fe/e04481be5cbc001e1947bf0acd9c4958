@@ -1,0 +1,16 @@
+package com.loiane.cursojava.lab4446.Exercicio2;
+
+public class Cubo extends Figura3D {
+
+	private double lado;
+	
+	public double getLado() {
+		return lado;
+	}
+	
+	public void setLado(double lado) {
+		this.lado = lado;
+	}
+	
+	
+}

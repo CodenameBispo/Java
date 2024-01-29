@@ -1,0 +1,9 @@
+package com.loiane.cursojava.aula44;
+
+public interface AnimalEstimacao {
+	
+	public abstract void brincar();	
+	public abstract void levarPassear();
+	
+	
+}

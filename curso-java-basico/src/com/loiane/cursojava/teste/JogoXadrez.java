@@ -1,0 +1,74 @@
+package com.loiane.cursojava.teste;
+
+import java.util.Scanner;
+
+public class JogoXadrez {
+
+    private static char[][] tabuleiro;
+
+    public static void main(String[] args) {
+        iniciarTabuleiro();
+        exibirTabuleiro();
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Digite a posição da peça (linha coluna) ou 'sair' para encerrar:");
+            String entrada = scanner.nextLine();
+
+            if (entrada.equalsIgnoreCase("sair")) {
+                System.out.println("Jogo encerrado.");
+                break;
+            }
+
+            try {
+                String[] partes = entrada.split(" ");
+                int linhaOrigem = Integer.parseInt(partes[0]);
+                int colunaOrigem = Integer.parseInt(partes[1]);
+
+                System.out.println("Digite a posição de destino (linha coluna):");
+                entrada = scanner.nextLine();
+                partes = entrada.split(" ");
+                int linhaDestino = Integer.parseInt(partes[0]);
+                int colunaDestino = Integer.parseInt(partes[1]);
+
+                moverPeca(linhaOrigem, colunaOrigem, linhaDestino, colunaDestino);
+                exibirTabuleiro();
+            } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+                System.out.println("Entrada inválida. Tente novamente.");
+            }
+        }
+
+        scanner.close();
+    }
+
+    private static void iniciarTabuleiro() {
+        tabuleiro = new char[8][8];
+
+        // Inicializa as peças no tabuleiro
+        tabuleiro[0] = "rnbqkbnr".toCharArray();
+        tabuleiro[1] = "pppppppp".toCharArray();
+        tabuleiro[6] = "PPPPPPPP".toCharArray();
+        tabuleiro[7] = "RNBQKBNR".toCharArray();
+    }
+
+    private static void exibirTabuleiro() {
+        System.out.println("\n  a b c d e f g h");
+
+        for (int i = 0; i < 8; i++) {
+            System.out.print(8 - i + " ");
+            for (int j = 0; j < 8; j++) {
+                System.out.print(tabuleiro[i][j] + " ");
+            }
+            System.out.println(8 - i);
+        }
+
+        System.out.println("  a b c d e f g h\n");
+    }
+
+    private static void moverPeca(int linhaOrigem, int colunaOrigem, int linhaDestino, int colunaDestino) {
+        char peca = tabuleiro[linhaOrigem][colunaOrigem];
+        tabuleiro[linhaOrigem][colunaOrigem] = ' ';
+        tabuleiro[linhaDestino][colunaDestino] = peca;
+    }
+}

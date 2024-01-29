@@ -1,0 +1,12 @@
+package com.loiane.cursojava.lab3643.exercicio3;
+
+public class Main {
+
+	public Main() {
+		
+		Animal camelo = new Animal("Camelo", 150, "Amarelo", "Terra", 2.0);
+		
+		
+		
+	}
+}

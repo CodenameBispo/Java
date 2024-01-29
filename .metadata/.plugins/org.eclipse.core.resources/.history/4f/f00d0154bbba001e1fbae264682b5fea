@@ -1,0 +1,13 @@
+package com.loiane.cursojava.aula36;
+
+public class Teste {
+	
+	public static void main(String[] args) {
+		
+		Contato contato = new Contato();
+		
+		contato.setNome("Tyrion");
+		contato.setEndereco("Kings loading");
+		contato.setTelefone("555000154");
+	}
+}

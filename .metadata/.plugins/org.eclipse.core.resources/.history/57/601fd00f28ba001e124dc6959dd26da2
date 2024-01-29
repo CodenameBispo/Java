@@ -1,0 +1,30 @@
+package com.loiane.cursojava.lab2527;
+
+import java.text.DecimalFormat;
+import java.util.Random;
+
+public class Exerc3 {
+
+	public static void main(String[] args) {
+		
+		DecimalFormat formato = new DecimalFormat("#.##");
+		Random random = new Random();
+		
+		Aluno aluno = new Aluno();
+		aluno.matricula = 001;
+		aluno.nome = "Lucas";
+		aluno.sobrenome = "Bispo" ;
+		aluno.curso = "Análise e desenvolvimento de sistemas";
+		aluno.disciplinas[0] = "Desenvolvimento Web";
+		aluno.disciplinas[1] = "Orientação A Objetos";
+		aluno.disciplinas[2] = "Gestão de Projetos";
+		
+		for(int i=0; i < 3 ; i++) {
+			for(int j=0; j < 3 ; j++) {
+				aluno.notas[i][j] = random.nextDouble(11);
+				System.out.println(formato.format(aluno.notas[i][j]));
+			}
+		}
+	}
+
+}

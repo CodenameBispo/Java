@@ -1,0 +1,8 @@
+package com.loiane.cursojava.lab36;
+
+public class Aluno {
+	
+	private String matricula;
+	private String[] notas = new String[4];
+	
+}

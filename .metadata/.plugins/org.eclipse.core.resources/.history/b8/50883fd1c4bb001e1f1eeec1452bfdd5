@@ -1,0 +1,18 @@
+package com.loiane.cursojava.lab3643.Exercicio1;
+
+import java.util.Scanner;
+
+public class Conta {
+	
+	Scanner scan = new Scanner(System.in);
+	private String[] contas = new String[100];
+
+	public String[] getContas() {
+		return contas;
+	}
+
+	public void setContas(String[] contas) {
+		this.contas = contas;
+	}
+	
+}

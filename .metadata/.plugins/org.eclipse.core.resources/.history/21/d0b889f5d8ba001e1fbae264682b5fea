@@ -1,0 +1,11 @@
+package com.loiane.cursojava.aula37;
+
+public class Professor {
+	
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private String cpf;
+	private String salario;
+	private String nomeCurso;
+}

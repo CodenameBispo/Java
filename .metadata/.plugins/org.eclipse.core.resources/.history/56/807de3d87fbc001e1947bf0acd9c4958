@@ -1,0 +1,42 @@
+package com.loiane.cursojava.lab3643.Exercicio22;
+
+import com.loiane.cursojava.lab3643.Exercicio22.enums.TipoPessoa;
+
+public class ReceitaFederal {
+
+	public Contribuinte contribuinte;
+
+	public ReceitaFederal() {
+	}
+	
+	public ReceitaFederal(Contribuinte contribuinte) {
+		this.contribuinte = contribuinte;
+	}
+	
+	public double calculoPessoaJuridica(Contribuinte contri) {
+		return contri.getRendaBruta() * 0.10;
+	}
+
+	public double calculoPessoaFisica(double rendaBruta) {
+		if (rendaBruta <= 1400) {
+			return 0;
+		} else if (rendaBruta <= 2100) {
+			return 0.10;
+		} else if (rendaBruta <= 2800) {
+			return 0.15;
+		} else if (rendaBruta <= 3600) {
+			return 0.25;
+		} else {
+			return 0.30;
+		}
+	}
+
+	public void impostoDeRenda(Contribuinte contribuinte2) {
+		if (contribuinte2.getTipoPessoa() == TipoPessoa.PESSOA_FISICA) {
+			calculoPessoaFisica(contribuinte2);
+		}else {
+			calculoPessoaJuridica(contribuinte2);
+		}
+		
+	}
+}

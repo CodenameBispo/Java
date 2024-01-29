@@ -1,0 +1,15 @@
+package com.loiane.cursojava.lab34;
+
+public class Exercicio2 {
+	
+
+	public static void main(String[] args) {
+		
+		System.out.println("Soma: " + Calculadora.somar(2500, 3890));
+		System.out.println("Subtração: " + Calculadora.subtrair(2500, 3890));
+		System.out.println("multiplicação: " + Calculadora.multiplicar(2500, 3890));
+		System.out.println("Divisão: " + Calculadora.dividir(2500, 3890));
+		System.out.println("Elevação: " + Calculadora.elevar(2500, 2));
+	}
+
+}

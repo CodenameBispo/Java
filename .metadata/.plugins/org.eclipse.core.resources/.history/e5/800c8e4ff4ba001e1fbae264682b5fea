@@ -1,0 +1,5 @@
+package com.loiane.cursojava.aula46;
+
+public interface SqlDCL extends SqlDCL, SqlDML, SqlDDL {
+
+}

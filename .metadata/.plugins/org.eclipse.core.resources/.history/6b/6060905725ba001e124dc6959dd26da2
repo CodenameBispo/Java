@@ -1,0 +1,12 @@
+package com.loiane.cursojava.lab2527;
+
+public class Aluno {
+	
+	String nome;
+	String sobrenome;	
+	String curso;
+	String[] disciplinas;
+	int matricula; 
+	double[] notas;
+	
+}

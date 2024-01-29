@@ -1,0 +1,8 @@
+package com.loiane.cursojava.lab36;
+
+public class Curso {
+	
+	private String nomeCurso;
+	private String horarioCurso;
+	private String[] alunos = new String[5];
+}

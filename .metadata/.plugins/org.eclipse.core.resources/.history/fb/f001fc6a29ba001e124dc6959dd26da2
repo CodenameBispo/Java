@@ -1,0 +1,16 @@
+package com.loiane.cursojava.lab2527;
+
+public class Aluno {
+	
+	String nome;
+	String sobrenome;	
+	String curso;
+	String[] disciplinas = new String[3];
+	int matricula; 
+	double[][] notas = new double[3][3];
+	
+	
+	boolean verMedia() {
+		
+	}
+}

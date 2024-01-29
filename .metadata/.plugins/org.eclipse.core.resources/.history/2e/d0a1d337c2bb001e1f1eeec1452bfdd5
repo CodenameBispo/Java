@@ -1,0 +1,14 @@
+package com.loiane.cursojava.lab3643.Exercicio1;
+
+public class Conta {
+	
+	private String[] contas;
+
+	public String[] getContas() {
+		return contas;
+	}
+
+	public void setContas(String[] contas) {
+		this.contas = contas;
+	}
+}

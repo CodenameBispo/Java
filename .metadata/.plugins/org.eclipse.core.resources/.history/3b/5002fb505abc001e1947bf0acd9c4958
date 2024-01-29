@@ -1,0 +1,10 @@
+package com.loiane.cursojava.lab4446.Exercicio2;
+
+public class Figura2D extends FiguraGeometrica{
+
+	public double calcularArea(double base, double altura) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

@@ -1,0 +1,44 @@
+package com.loiane.cursojava.lab4752;
+
+import java.util.Scanner;
+
+public class Teste {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		Contato[] contatos = new Contato[2];
+		
+		System.out.println("Bem vindo a sua agenda!");
+		System.out.println("Digite :");
+		System.out.println("1 - Consultar um contato");
+		System.out.println("2 - Adicionar um contato");
+		System.out.println("3 - Sair");
+		int opc = scan.nextInt();
+		
+		switch(opc) {
+		case 1: 
+			System.out.println("Defina a forma de pesquisa");
+			System.out.println("1 - Pelo nome");
+			System.out.println("2 - Pelo identificador");
+			opc = scan.nextInt();
+			
+			switch(opc) {
+			
+			}
+			break;
+		case 2:
+			for(Contato c: contatos) {
+				if(c != null) {
+					
+				}
+				Contato contato = new Contato();
+				contatos[contato.getIdentificador()] = Agenda.adicionarContato();
+				
+			}
+			break;
+		}
+		
+	}
+}

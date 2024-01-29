@@ -1,0 +1,55 @@
+package com.loiane.cursojava.lab2527;
+
+import java.text.DecimalFormat;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Exerc3 {
+
+	public static void main(String[] args) {
+		
+		DecimalFormat formato = new DecimalFormat("#.##");
+		Random random = new Random();
+		Scanner scan = new Scanner(System.in);
+		int disc = 0;
+		
+		Aluno aluno = new Aluno();
+		aluno.matricula = 001;
+		aluno.nome = "Lucas";
+		aluno.sobrenome = "Bispo" ;
+		aluno.curso = "Análise e desenvolvimento de sistemas";
+		aluno.disciplinas[0] = "Desenvolvimento Web";
+		aluno.disciplinas[1] = "Orientação A Objetos";
+		aluno.disciplinas[2] = "Gestão de Projetos";
+		
+		for(int i=0; i < 3 ; i++) {
+			for(int j=0; j < 4 ; j++) {
+				aluno.notas[i][j] = random.nextDouble(11);
+				System.out.println(formato.format(aluno.notas[i][j]));
+			}
+		}
+		
+		do {
+			System.out.println("Digite a matricula do aluno");
+			if(scan.nextInt() == aluno.matricula) {
+				System.out.println("Aluno: " + aluno.nome + " " + aluno.sobrenome);
+				
+				System.out.println("Matérias matriculadas");				
+				for(int i=0 ; i <3 ; i++) {
+					System.out.println(aluno.disciplinas[i]);
+				}
+				System.out.println("\n Qual matéria deseja saber a situação?");
+				String materia = scan.next();
+				
+				for(int i=0 ; i <3 ; i++) {
+					if(materia.equalsIgnoreCase(aluno.disciplinas[i])) {
+						disc = i;
+					}
+				}
+				
+				
+			}
+		} while(1 == 1);
+	}
+
+}
