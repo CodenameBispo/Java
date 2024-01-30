@@ -31,8 +31,6 @@
     <fullyQualifiedTypeName name="com.loiane.cursojava.lab35.exercicio1"/>
     <fullyQualifiedTypeName name="com.loiane.cursojava.lab35.Exercicio1e2"/>
     <fullyQualifiedTypeName name="com.loiane.cursojava.lab36.Pessoa"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.Throwable"/>
     <fullyQualifiedTypeName name="com.loiane.cursojava.aula52.DivisaoNaoExata"/>
     <fullyQualifiedTypeName name="com.loiane.cursojava.lab3643.Exercicio1.ContaBancaria"/>
@@ -57,4 +55,9 @@
     <fullyQualifiedTypeName name="com.loiane.cursojava.lab3643.Exercicio22.Contribuinte"/>
     <fullyQualifiedTypeName name="com.loiane.cursojava.lab3643.Exercicio22.enums.TipoPessoa"/>
     <fullyQualifiedTypeName name="com.loiane.cursojava.lab3643.Exercicio22.ReceitaFederal"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.loiane.cursojava.lab4752.Contato"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.loiane.cursojava.lab4752.AgendaCheiaException"/>
+    <fullyQualifiedTypeName name="com.loiane.cursojava.lab4752.ContatoNaoExisteException"/>
 </qualifiedTypeNameHistroy>

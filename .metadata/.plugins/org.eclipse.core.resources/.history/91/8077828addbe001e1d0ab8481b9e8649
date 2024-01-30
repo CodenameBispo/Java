@@ -7,11 +7,6 @@ public class Aluno extends Pessoa{
 	private String matricula;
 	private double[] notas = new double[4];
 	
-	
-	public Aluno() {
-		super();
-		Aluno[] alunos = new Aluno [5];
-	}
 	public String getMatricula() {
 		return matricula;
 	}

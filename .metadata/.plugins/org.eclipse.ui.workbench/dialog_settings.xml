@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialog">
-		<item key="DIALOG_X_ORIGIN" value="20"/>
-		<item key="DIALOG_Y_ORIGIN" value="20"/>
-		<item key="DIALOG_WIDTH" value="895"/>
-		<item key="DIALOG_HEIGHT" value="1008"/>
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="1366"/>
+		<item key="DIALOG_HEIGHT" value="723"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
 	</section>
 	<section name="NewWizardAction">
@@ -29,13 +29,14 @@
 			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textEntries">
-			<item value="2"/>
+			<item value="3"/>
 			<item value="1"/>
 			<item value="2"/>
 		</list>
 		<list key="textArray">
-			<item value="constr"/>
 			<item value="cons"/>
+			<item value="c"/>
+			<item value="constr"/>
 			<item value="getter"/>
 			<item value="tost"/>
 			<item value="tostring"/>

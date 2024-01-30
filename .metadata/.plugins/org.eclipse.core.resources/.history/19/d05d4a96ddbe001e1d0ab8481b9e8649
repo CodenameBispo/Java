@@ -10,7 +10,7 @@ public class Aluno extends Pessoa{
 	
 	public Aluno() {
 		super();
-		Aluno[] alunos = new Aluno [5];
+		
 	}
 	public String getMatricula() {
 		return matricula;

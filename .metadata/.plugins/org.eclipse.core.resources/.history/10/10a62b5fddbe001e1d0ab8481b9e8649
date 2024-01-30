@@ -6,14 +6,8 @@ public class Curso {
 	
 	private String nomeCurso;
 	private String horarioCurso;
-	private Aluno[] alunos;
+	private Aluno[] alunos = new Aluno[5];
 	
-	public Aluno[] getAlunos() {
-		return alunos;
-	}
-	public void setAlunos(Aluno[] alunos) {
-		this.alunos = alunos;
-	}
 	public String getNomeCurso() {
 		return nomeCurso;
 	}
@@ -26,7 +20,17 @@ public class Curso {
 	public void setHorarioCurso(String horarioCurso) {
 		this.horarioCurso = horarioCurso;
 	}
-	
+	public Aluno[] getAlunos() {
+		return alunos;
+	}
+	public void setAlunos(Aluno[] alunos) {
+		this.alunos = alunos;
+	}
+	@Override
+	public String toString() {
+		
+		return "Curso " + this.nomeCurso + "\n " + Arrays.toString(alunos) ;
+	}
 	
 
 	
